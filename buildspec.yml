@@ -4,8 +4,7 @@ env:
     variables:
         MY_AWS_REGION: "ap-south-1"
 
-
-phases: 
+phases:
     install:
         runtime-versions:
             nodejs: 12
@@ -14,8 +13,9 @@ phases:
             - echo "Print Environment Variables"
             - echo "Start the installation process"
             - echo "Installation Process Completed"
+            - echo "Hey welcome to AWS $name"
     pre_build:
-        commands: 
+        commands:
             - echo "This is the start of Pre-Build phase"
             - echo "Pre-Build phase is now completed"
     build:
